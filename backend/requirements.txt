@@ -1,0 +1,12 @@
+Flask
+flask-cors
+numpy
+scikit-learn
+gunicorn
+numpy
+pandas
+matplotlib
+scikit-learn
+xgboost
+scipy
+flask
