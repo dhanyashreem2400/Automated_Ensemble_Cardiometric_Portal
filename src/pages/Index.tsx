@@ -99,15 +99,12 @@ const Index = () => {
       cp_1: formData.cp === "1" ? 1 : 0, // Typical Angina
       cp_2: formData.cp === "2" ? 1 : 0, // Atypical Angina
       cp_3: formData.cp === "3" ? 1 : 0, // Non-anginal Pain
-      // cp_4: formData.cp === "3" ? 1 : 0, // Asymptomatic
       // For resting ECG (restecg)
       restecg_1: formData.restecg === "1" ? 1 : 0, // Normal
       restecg_2: formData.restecg === "2" ? 1 : 0, // ST-T Wave Abnormality
-      // restecg_2: formData.restecg === "2" ? 1 : 0, // Left Ventricular Hypertrophy
       // For slope (slope)
       slope_1: formData.slope === "1" ? 1 : 0, // Upsloping
       slope_2: formData.slope === "2" ? 1 : 0, // Flat
-      // slope_3: formData.slope === "2" ? 1 : 0, // Downsloping
       // For thalassemia (thal)
       thal_1: formData.thal === "1" ? 1 : 0, // Normal
       thal_2: formData.thal === "2" ? 1 : 0, // Fixed Defect
@@ -115,7 +112,7 @@ const Index = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/predict', {
+      const response = await fetch('https://automated-ensemble-cardiometric-portal.onrender.com/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -289,10 +286,6 @@ const Index = () => {
                     <RadioGroupItem value="2" id="cp-3" />
                     <Label htmlFor="cp-3">Non-anginal Pain</Label>
                   </div>
-                  {/* <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="3" id="cp-3" />
-                    <Label htmlFor="cp-3">Asymptomatic</Label>
-                  </div> */}
                 </RadioGroup>
               </div>
 
@@ -407,10 +400,6 @@ const Index = () => {
                     <RadioGroupItem value="1" id="restecg-2" />
                     <Label htmlFor="restecg-2">ST-T Wave Abnormality</Label>
                   </div>
-                  {/* <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="2" id="restecg-2" />
-                    <Label htmlFor="restecg-2">Left Ventricular Hypertrophy</Label>
-                  </div> */}
                 </RadioGroup>
               </div>
 
@@ -526,10 +515,6 @@ const Index = () => {
                     <RadioGroupItem value="1" id="slope-2" />
                     <Label htmlFor="slope-2">Flat</Label>
                   </div>
-                  {/* <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="2" id="slope-2" />
-                    <Label htmlFor="slope-2">Downsloping</Label>
-                  </div> */}
                 </RadioGroup>
               </div>
 
