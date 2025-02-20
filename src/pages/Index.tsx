@@ -112,7 +112,7 @@ const Index = () => {
     };
 
     try {
-      const response = await fetch('https://automated-ensemble-cardiometric-portal.onrender.com/', {
+      const response = await fetch('https://automated-ensemble-cardiometric-portal.onrender.com/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
