@@ -47,11 +47,18 @@ This will start the frontend, which will be accessible at `http://localhost:8080
 ### 5. Accessing the Application
 Once both the backend and frontend are running, you can access the application in your browser at `http://localhost:8080`.
 
-
-## Deployment
-If deploying to any other hosting service, ensure that:
-- The Flask backend is hosted with the required environment variables.
-- The frontend is deployed separately and points to the correct backend URL.
+## This project is built with .
++ Frontend:
+  - Vite
+  - TypeScript
+  - React
+  - shadcn-ui
+  - Tailwind CSS
+* Backend:
+  - Flask
+  - Machine Learning Models (Stacking & Blending)
+* Deployed using:
+  - Render
 
 ## Notes
 - **Ensure you don’t push `node_modules/` or `__pycache__/` to GitHub** (these are ignored in `.gitignore`).
