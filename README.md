@@ -47,7 +47,7 @@ This will start the frontend, which will be accessible at `http://localhost:8080
 ### 5. Accessing the Application
 Once both the backend and frontend are running, you can access the application in your browser at `http://localhost:8080`.
 
-## This project is built with .
+## This project is built with 
 + Frontend:
   - Vite
   - TypeScript
