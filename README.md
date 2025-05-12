@@ -60,9 +60,7 @@ Once both the backend and frontend are running, you can access the application i
 * Deployed using:
   - Render
 
-## Notes
-- **Ensure you don’t push `node_modules/` or `__pycache__/` to GitHub** (these are ignored in `.gitignore`).
-- **Use a virtual environment for Python** (`python -m venv env` and `source env/bin/activate` or `env\Scripts\activate` for Windows).
+
 
 
 
